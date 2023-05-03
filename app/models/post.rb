@@ -1,4 +1,4 @@
 class Post < ApplicationRecord
-  has_many :comments
+  has_many :comments, :likes
   belongs_to :users
 end
