@@ -1,3 +1,3 @@
 class Comment < ApplicationRecord
-  has_many :users, :posts
+  belongs_to :users, :posts
 end

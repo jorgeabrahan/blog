@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-  belongs_to :comments
+  has_many :comments
 end
