@@ -29,19 +29,19 @@
 
 ## Entity Relationship Diagram
 
-![Entity Relationship Diagram](https://raw.githubusercontent.com/microverseinc/curriculum-rails/main/blog-app/images/blog_app_erd.png?token=GHSAT0AAAAAAB6KCH25XN73B7CGYSJQQ2AEZCRU7TA)
+![Entity Relationship Diagram](./repo_images/blog_app_erd.png)
 
 ## Blog UI guidelines
 
-![Login Page](https://raw.githubusercontent.com/microverseinc/curriculum-rails/main/blog-app/images/blog_login.png?token=GHSAT0AAAAAAB6KCH24NRURL4RP2NIW5PNQZCRU7BQ)
+![Login Page](./repo_images/blog_login.png)
 
-![Root Users](https://raw.githubusercontent.com/microverseinc/curriculum-rails/main/blog-app/images/blog_root_users.png?token=GHSAT0AAAAAAB6KCH24ASFJGRHOQOM5WDEGZCRU76A)
+![Root Users](./repo_images/blog_root_users.png)
 
-![Blog Users Page](https://raw.githubusercontent.com/microverseinc/curriculum-rails/main/blog-app/images/blog_user_page.png?token=GHSAT0AAAAAAB6KCH25NBXYXZSDVMQUOHZAZCRVAWA)
+![Blog Users Page](./repo_images/blog_user_page.png)
 
-![Blog User Posts](https://raw.githubusercontent.com/microverseinc/curriculum-rails/main/blog-app/images/blog_user_all_posts.png?token=GHSAT0AAAAAAB6KCH242H5JHA4PMZG7KUNCZCRVA4A)
+![Blog User Posts](./repo_images/blog_user_all_posts.png)
 
-![Blog Post](https://raw.githubusercontent.com/microverseinc/curriculum-rails/main/blog-app/images/blog_single_post.png?token=GHSAT0AAAAAAB6KCH24ELHO6CUEDPLC67K6ZCRVBDQ)
+![Blog Post](./repo_images/blog_single_post.png)
 
 ## 🛠 Built With <a name="built-with"></a>
 
