@@ -96,25 +96,16 @@ Or download the ZIP folder.
 Once you've cloned the repository simply run:
 
 ```
-cd blog
-```
-
-And if you want to analyze the code you can run:
-
-```
-code .
-```
-
-To open the project in VScode
-
-### Usage
-
-To run the project, if you are on the blog folder path on your terminal you can execute the following commands:
-
-```
 bundle install
 rails db:create
 rails db:migrate
+```
+
+### Usage
+
+To run the project, if you are on the blog folder path on your terminal you can execute the following command:
+
+```
 rails server
 ```
 
