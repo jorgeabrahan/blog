@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe Post, :type => :model do
+RSpec.describe Post, type: :model do
   it 'Should not be valid if title is not supplied' do
     expect(Post.new).to_not be_valid
   end

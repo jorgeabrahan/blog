@@ -5,7 +5,7 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   validates :name, lenght: { maximum: 200 }
-  validates :photo, format: { with: /\Ahttps:\/\/.*\z/, message: "must start with https://" }
+  validates :photo, format: { with: %r{\Ahttps://.*\z}, message: 'must start with https://' }
   validates :bio, length: { maximum: 250 }
   validates :posts_counter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
 

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe Comment, :type => :model do
+RSpec.describe Comment, type: :model do
   it 'Should not be valid without a text' do
     expect(Comment.new).to_not be_valid
   end
