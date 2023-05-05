@@ -111,7 +111,11 @@ rails server
 
 ### Run tests
 
-There are no tests configured for this project yet.
+To start tests run:
+
+```
+rspec spec
+```
 
 ### Deployment
 
