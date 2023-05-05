@@ -19,4 +19,13 @@ RSpec.describe User, :type => :model do
   it 'Should not be valid if posts counter is a negative number' do
     expect(User.new(name: 'Jorge', posts_counter: -20)).to_not be_valid
   end
+  it "returns the 3 most recent posts" do
+    user = User.create(name: "John")
+    post1 = Post.create(title: "First post", created_at: 1.day.ago, user: user)
+    post2 = Post.create(title: "Second post", created_at: 2.days.ago, user: user)
+    post3 = Post.create(title: "Third post", created_at: 3.days.ago, user: user)
+    post4 = Post.create(title: "Fourth post", created_at: 4.days.ago, user: user)
+
+    expect(user.recent_posts).to eq([post1, post2, post3])
+  end
 end
