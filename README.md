@@ -109,9 +109,12 @@ To open the project in VScode
 
 ### Usage
 
-To run the project, if you are on the blog folder path on your terminal you can execute the following command:
+To run the project, if you are on the blog folder path on your terminal you can execute the following commands:
 
 ```
+bundle install
+rails db:create
+rails db:migrate
 rails server
 ```
 
