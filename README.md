@@ -119,7 +119,8 @@ rspec spec
 
 ### Deployment
 
-This project is not deployed yet.
+- Render
+- Heroku
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
