@@ -29,7 +29,7 @@ RSpec.describe Post, type: :model do
     comment6 = Comment.create(text: 'Comment 6', created_at: 6.days.ago)
 
     post.comments << [comment1, comment2, comment3, comment4, comment5, comment6]
-    
+
     expect(post.recent_comments).to eq([comment1, comment2, comment3, comment4, comment5])
   end
 end
