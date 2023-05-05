@@ -28,4 +28,7 @@ RSpec.describe User, :type => :model do
 
     expect(user.recent_posts).to eq([post1, post2, post3])
   end
+  it 'increments the posts counter by 1' do
+    expect { User.create(name: 'John').update_posts_counter }.to change { user.posts_counter }.by(1)
+  end
 end
