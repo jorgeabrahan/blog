@@ -4,7 +4,7 @@ class User < ApplicationRecord
   has_many :likes, class_name: 'Like'
 
   validates :name, presence: true
-  validates :name, lenght: { maximum: 200 }
+  validates :name, length: { maximum: 200 }
   validates :photo, format: { with: %r{\Ahttps://.*\z}, message: 'must start with https://' }
   validates :bio, length: { maximum: 250 }
   validates :posts_counter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
