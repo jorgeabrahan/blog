@@ -158,7 +158,7 @@ If you like this project you can just cheer me up with a comment 🙂!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-No acknowledgments needed so far!
+The whole project idea comes from Microverse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
