@@ -5,7 +5,7 @@ RSpec.describe Comment, type: :model do
     @not_valid_comment = Comment.new
     @user = User.new(name: 'Juan')
     @post = Post.new(author: @user, title: 'My post', text: 'Post text')
-    @comment = Comment.create(post: @post, author: @user, text: 'Hi Tom!' )
+    @comment = Comment.create(post: @post, author: @user, text: 'Hi Tom!')
   end
 
   it 'Should not be valid without a text' do
