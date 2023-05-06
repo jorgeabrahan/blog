@@ -69,14 +69,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-In progress
-
-<!-- - [https://metrics-4byw.onrender.com/](https://metrics-4byw.onrender.com/) -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -104,16 +96,10 @@ Or download the ZIP folder.
 Once you've cloned the repository simply run:
 
 ```
-cd blog
+bundle install
+rails db:create
+rails db:migrate
 ```
-
-And if you want to analyze the code you can run:
-
-```
-code .
-```
-
-To open the project in VScode
 
 ### Usage
 
@@ -125,11 +111,16 @@ rails server
 
 ### Run tests
 
-There are no tests configured for this project yet.
+To start tests run:
+
+```
+rspec spec
+```
 
 ### Deployment
 
-This project is not deployed yet.
+- Render
+- Heroku
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -167,7 +158,7 @@ If you like this project you can just cheer me up with a comment 🙂!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-No acknowledgments needed so far!
+The whole project idea comes from Microverse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
