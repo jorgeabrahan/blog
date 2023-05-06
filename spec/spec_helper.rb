@@ -93,4 +93,7 @@ RSpec.configure do |config|
   #   # as the one that triggered the failure.
   #   Kernel.srand config.seed
   require_relative '../app/models/user'
+  require_relative '../app/models/post'
+  require_relative '../app/models/comment'
+  require_relative '../app/models/like'
 end
