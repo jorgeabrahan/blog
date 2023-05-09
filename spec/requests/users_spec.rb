@@ -5,6 +5,7 @@ RSpec.describe UsersController, type: :controller do
     it 'returns http success' do
       get :index
       expect(response).to have_http_status(:success)
+      expect(response.body).to include("This page is ment to show all users")
     end
 
     it "renders the index template" do
@@ -17,6 +18,7 @@ RSpec.describe UsersController, type: :controller do
     it 'returns http success' do
       get :show, params: { id: 1 }
       expect(response).to have_http_status(:success)
+      expect(response.body).to include("This page is ment to show a given user")
     end
 
     it "renders the show template" do
