@@ -1,17 +1,29 @@
 require 'rails_helper'
 
-RSpec.describe 'Users', type: :request do
-  describe 'GET /index' do
+RSpec.describe UsersController, type: :controller do
+  describe 'GET /users' do
     it 'returns http success' do
-      get '/users/index'
+      get :index
       expect(response).to have_http_status(:success)
+      expect(response.body).to include('This page is ment to show all users')
+    end
+
+    it 'renders the index template' do
+      get :index
+      expect(response).to render_template('users/index')
     end
   end
 
-  describe 'GET /show' do
+  describe 'GET /users/:id' do
     it 'returns http success' do
-      get '/users/show'
+      get :show, params: { id: 1 }
       expect(response).to have_http_status(:success)
+      expect(response.body).to include('This page is ment to show a given user')
+    end
+
+    it 'renders the show template' do
+      get :show, params: { id: 1 }
+      expect(response).to render_template('users/show')
     end
   end
 end
