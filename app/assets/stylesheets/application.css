@@ -29,7 +29,7 @@
   text-decoration: none;
   color: black;
   font-weight: 600;
-  box-shadow: 4px 4px 0px 0px black;
+  box-shadow: 4px 4px 0 0 black;
 }
 
 .btn:active {
