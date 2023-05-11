@@ -1,0 +1,39 @@
+.layout-container-user {
+  margin-top: 1rem;
+}
+
+.user_posts {
+  margin-bottom: 1rem;
+}
+
+.user__bio,
+.user__post {
+  border: 3px solid black;
+  padding: 0.5rem;
+}
+
+.user__bio {
+  margin-block: 1rem;
+}
+
+.user_post-comments {
+  display: block;
+  text-align: right;
+}
+
+.user__btn-posts {
+  margin-inline: auto;
+  border: 3px solid black;
+  padding: 0.4rem 0.8rem;
+  display: block;
+  max-width: max-content;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  box-shadow: 4px 4px 0px 0px black;
+}
+
+.user__btn-posts:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
