@@ -1,7 +1,11 @@
 <div class="user">
   <%= image_tag user.photo, class: "user__image" %>
   <div class="user__details">
-    <%= link_to user.name, user_path(user), class: "user__name" %>
+    <% if name_as_link %>
+      <%= link_to user.name, user_path(user), class: "user__name" %>
+    <% else %>
+      <p class="user__name"><%= user.name %></p>
+    <% end %>
     <small class="user__posts">Amount of posts: <%= user.post_counter %></small>
   </div>
 </div>
