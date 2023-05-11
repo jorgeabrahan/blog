@@ -6,7 +6,7 @@
   <section class="layout-container">
     <div class="post">
       <div class="post__header">
-        <h3><%= @post.title %> &#35;<%= @post.id %> by <%= @user.name %></h3>
+        <h3><%= @post.title %> &#35;<%= @post.id %> by <%= link_to @user.name, user_path(@user) %></h3>
         <small>Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></small>  
       </div>
       <p class="post__description"><%= @post.text %></p>
