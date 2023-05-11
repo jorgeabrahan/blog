@@ -26,20 +26,3 @@
   display: block;
   text-align: right;
 }
-
-.user__btn-posts {
-  margin-inline: auto;
-  border: 3px solid black;
-  padding: 0.4rem 0.8rem;
-  display: block;
-  max-width: max-content;
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  box-shadow: 4px 4px 0px 0px black;
-}
-
-.user__btn-posts:active {
-  transform: translate(4px, 4px);
-  box-shadow: none;
-}
