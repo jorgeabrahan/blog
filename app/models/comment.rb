@@ -6,6 +6,10 @@ class Comment < ApplicationRecord
 
   after_create :increment_comments_counter
 
+  def who_wrote_it
+    author.name
+  end
+
   private
 
   def increment_comments_counter

@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   resources :users, only: [:index, :show] do
-    namespace :users do
-      resources :posts, only: [:index, :show]
-    end
+    resources :posts, only: [:index, :show], controller: 'users/posts'
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

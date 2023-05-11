@@ -1,0 +1,21 @@
+.post {
+  margin-block: 1rem;
+}
+
+.post,
+.post__comments {
+  border: 3px solid black;
+  padding: 0.5rem;
+}
+
+.post__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.post__comments {
+  display: grid;
+  gap: 1rem;
+}
