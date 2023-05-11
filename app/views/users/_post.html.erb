@@ -1,5 +1,5 @@
 <div class="user__post">
-  <h3><%= link_to post.title, user_post_path(user_id: post.author_id, id: post.id) %> &#35;<%= post.id %></h3>
-  <p><%= post.text.length > 120 ? post.text[0..119] + "..." : post.text %></p>
-  <small class="user_post-comments">Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></small>
+  <h4 class="user__post-title"><%= link_to post.title, user_post_path(user_id: post.author_id, id: post.id) %> &#35;<%= post.id %></h4>
+  <p><%= post.text.length > 250 ? post.text[0..250] + "..." : post.text %></p>
+  <small class="user__post-comments">Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></small>
 </div>
