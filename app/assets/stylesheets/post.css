@@ -1,0 +1,13 @@
+.post,
+.post__comments {
+  border: 3px solid black;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+.post__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
