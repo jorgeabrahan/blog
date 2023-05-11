@@ -11,3 +11,8 @@
   justify-content: space-between;
   margin-bottom: 0.8rem;
 }
+
+.post__comments {
+  display: grid;
+  gap: 1rem;
+}
