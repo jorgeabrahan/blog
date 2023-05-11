@@ -43,7 +43,7 @@
   text-decoration: none;
 }
 
-.user__posts {
+.user__posts-amount {
   display: block;
   text-align: right;
 }
