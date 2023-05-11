@@ -8,10 +8,10 @@
       <p class="user__bio-description"><%= @user.bio %></p>
     </div>
     <section class="user__posts">
-      <%= render partial: 'post', collection: @user.recent_posts %>
+      <%= render partial: 'post', collection: @user.recent_posts, locals: { display_comments: false } %>
     </section>
     <% if @user.posts.length > 3 %>
-      <%= link_to 'See all posts', user_posts_path(user_id: @user.id), class: "user__btn-posts" %>
+      <%= link_to 'See all posts', user_posts_path(user_id: @user.id), class: "btn" %>
     <% end %>
   </section>
 <% end %>
