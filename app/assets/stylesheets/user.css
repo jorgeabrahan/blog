@@ -2,8 +2,10 @@
   margin-top: 1rem;
 }
 
-.user_posts {
+.user__posts {
   margin-bottom: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 .user__bio,
