@@ -19,3 +19,20 @@
   margin-inline: auto;
   padding-inline: 1rem;
 }
+
+.btn {
+  margin-inline: auto;
+  border: 3px solid black;
+  padding: 0.4rem 0.8rem;
+  display: block;
+  max-width: max-content;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  box-shadow: 4px 4px 0px 0px black;
+}
+
+.btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
