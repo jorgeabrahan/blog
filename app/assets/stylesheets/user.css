@@ -18,7 +18,11 @@
   margin-block: 1rem;
 }
 
-.user_post-comments {
+.user__post-title {
+  margin-bottom: 0.4rem;
+}
+
+.user__post-comments {
   display: block;
   text-align: right;
 }
