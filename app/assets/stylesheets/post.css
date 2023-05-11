@@ -1,7 +1,10 @@
+.post {
+  margin-block: 1rem;
+}
+
 .post,
 .post__comments {
   border: 3px solid black;
-  margin-top: 1rem;
   padding: 0.5rem;
 }
 
