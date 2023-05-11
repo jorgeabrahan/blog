@@ -31,17 +31,15 @@
 
 ![Entity Relationship Diagram](./repo_images/blog_app_erd.png)
 
-## Blog UI guidelines
+## View URIs
 
-![Login Page](./repo_images/blog_login.png)
+![users](./repo_images/users_uri_view.png)
 
-![Root Users](./repo_images/blog_root_users.png)
+![users/:id](./repo_images/users_id_uri_view.png)
 
-![Blog Users Page](./repo_images/blog_user_page.png)
+![users/:user_id/posts](./repo_images/users_user_id_posts_uri_view.png)
 
-![Blog User Posts](./repo_images/blog_user_all_posts.png)
-
-![Blog Post](./repo_images/blog_single_post.png)
+![users/:user_id/posts/:id](./repo_images/users_user_id_posts_id_uri_view.png)
 
 ## 🛠 Built With <a name="built-with"></a>
 
