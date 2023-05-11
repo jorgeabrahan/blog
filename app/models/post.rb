@@ -13,7 +13,7 @@ class Post < ApplicationRecord
   end
 
   def all_comments
-    comments.order(created_at: :desc)
+    comments.order(created_at: :asc)
   end
 
   after_create :increment_post_counter
