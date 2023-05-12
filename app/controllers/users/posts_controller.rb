@@ -12,4 +12,15 @@ class Users::PostsController < ApplicationController
     @post = Post.new
     @user = current_user
   end
+
+  def create
+    @post = Post.new(post_params)
+    @post.author = current_user
+  end
+
+  private
+
+  def post_params
+    params.require(:post).permit(:title, :text)
+  end
 end
