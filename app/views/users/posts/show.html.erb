@@ -17,6 +17,6 @@
     <div class="post__comments">
       <%= render partial: 'comment', collection: @post.all_comments %>
     </div>
-    <%= link_to 'New Comment', new_user_post_comment_path(@user, @post) %>
+    <%= link_to 'New Comment', new_user_post_comment_path(@user, @post), class: "btn" %>
   </section>
 <% end %>
