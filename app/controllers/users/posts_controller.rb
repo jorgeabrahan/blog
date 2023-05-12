@@ -16,6 +16,12 @@ class Users::PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.author = current_user
+    
+    if @post.save
+      redirect_to user_posts_path(user_id: params[:user_id].to_i)
+    else
+      render 'new'
+    end
   end
 
   private
