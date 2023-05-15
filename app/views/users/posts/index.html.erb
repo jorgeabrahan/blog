@@ -4,7 +4,7 @@
   <section class="layout-container layout-container-posts">
     <%= render partial: 'users/user', locals: { user: @user, name_as_link: true } %>
     <div class="posts">
-      <%= render partial: 'users/post', collection: @user.all_posts, locals: { display_comments: true } %>
+      <%= render partial: 'users/post', collection: @posts, locals: { display_comments: true } %>
     </div>
     <a href="#" class="btn">Pagination</a>
   </section>
