@@ -40,4 +40,11 @@ class PostsTest < ApplicationSystemTestCase
     visit user_posts_path(users(:one))
     assert_text "Pagination"
   end
+  test 'When a post gets clicked it redirects to that post\'s show page' do
+    user = users(:one)
+    visit user_posts_path(user)
+    post = user.posts[0]
+    click_link post.title
+    assert_current_path user_post_path(user, post)
+  end
 end
