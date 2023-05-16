@@ -6,4 +6,9 @@ class UsersTest < ApplicationSystemTestCase
     assert_text "Jorge"
     assert_text "Juan"
   end
+
+  test 'Profile pictures are being displayed' do
+    visit users_path
+    assert_selector "img[src='https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541']"
+  end
 end
