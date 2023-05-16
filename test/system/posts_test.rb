@@ -36,4 +36,8 @@ class PostsTest < ApplicationSystemTestCase
       assert_text "Likes: #{post.likes_counter}"
     end
   end
+  test 'Pagination section link is being displayed' do
+    visit user_posts_path(users(:one))
+    assert_text "Pagination"
+  end
 end
