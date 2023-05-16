@@ -13,4 +13,12 @@ class PostsTest < ApplicationSystemTestCase
     visit user_posts_path(users(:one))
     assert_text 'Amount of posts: 2'
   end
+  test 'Posts title and description is being displayed' do
+    user = users(:one)
+    visit user_posts_path(user)
+    user.posts.each do |post|
+      assert_text post.title
+      assert_text post.text
+    end
+  end
 end
