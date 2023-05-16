@@ -1,17 +1,17 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  photo: MyString
+  name: Jorge
+  photo: https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541
   bio: MyText
   updated_at: 2023-05-03 12:30:32
-  creaetd_at: 2023-05-03 12:30:32
-  posts_counter: 1
+  created_at: 2023-05-03 12:30:32
+  post_counter: 2
 
 two:
-  name: MyString
-  photo: MyString
+  name: Juan
+  photo: https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541
   bio: MyText
   updated_at: 2023-05-03 12:30:32
-  creaetd_at: 2023-05-03 12:30:32
-  posts_counter: 1
+  created_at: 2023-05-03 12:30:32
+  post_counter: 3
