@@ -1,17 +1,19 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  text: MyText
+  title: 'My first post'
+  text: 'Description of my first post'
   updated_at: 2023-05-03 13:03:42
   created_at: 2023-05-03 13:03:42
-  comments_counter: 1
+  comments_counter: 2
   likes_counter: 1
+  author: one
 
 two:
-  title: MyString
-  text: MyText
+  title: 'My second post'
+  text: 'Description of my second post'
   updated_at: 2023-05-03 13:03:42
   created_at: 2023-05-03 13:03:42
   comments_counter: 1
-  likes_counter: 1
+  likes_counter: 3
+  author: one
