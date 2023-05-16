@@ -1,4 +1,4 @@
-require "application_system_test_case"
+require 'application_system_test_case'
 
 class PostsTest < ApplicationSystemTestCase
   test 'User profile picture is being displayed' do
@@ -7,7 +7,7 @@ class PostsTest < ApplicationSystemTestCase
   end
   test 'User username is being displayed' do
     visit user_posts_path(users(:one))
-    assert_text "Jorge"
+    assert_text 'Jorge'
   end
   test 'Number of posts of the user is being displayed' do
     visit user_posts_path(users(:one))
@@ -38,7 +38,7 @@ class PostsTest < ApplicationSystemTestCase
   end
   test 'Pagination section link is being displayed' do
     visit user_posts_path(users(:one))
-    assert_text "Pagination"
+    assert_text 'Pagination'
   end
   test 'When a post gets clicked it redirects to that post\'s show page' do
     user = users(:one)

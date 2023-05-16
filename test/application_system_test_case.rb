@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
   driven_by :selenium_remote_chrome
-  
+
   Capybara.register_driver :selenium_remote_chrome do |app|
     options = Selenium::WebDriver::Chrome::Options.new
     options.add_argument('--start-maximized')
@@ -10,7 +10,7 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
     Capybara::Selenium::Driver.new(
       app,
       browser: :chrome,
-      options: options
+      options:
     )
   end
 
