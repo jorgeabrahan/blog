@@ -1,8 +1,5 @@
 require 'test_helper'
 
-WINDOWS_HOST = `cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }'`.strip
-CHROMEDRIVER_URL = "http://#{WINDOWS_HOST}:9515/"
-
 class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
   driven_by :selenium_remote_chrome
   
@@ -12,8 +9,8 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
 
     Capybara::Selenium::Driver.new(
       app,
-      browser: :remote,
-      url: CHROMEDRIVER_URL
+      browser: :chrome,
+      options: options
     )
   end
 
