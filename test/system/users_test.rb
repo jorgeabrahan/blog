@@ -21,4 +21,11 @@ class UsersTest < ApplicationSystemTestCase
       assert_text 'Amount of posts: 3'
     end
   end
+
+  test 'When clicking on user name redirects to user\'s show page' do
+    visit users_path
+    user = users(:one)
+    click_link user.name
+    assert_current_path user_path(user)
+  end
 end
