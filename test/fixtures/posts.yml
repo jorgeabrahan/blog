@@ -1,19 +1,33 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  title: 'My first post'
-  text: 'Description of my first post'
-  updated_at: 2023-05-03 13:03:42
-  created_at: 2023-05-03 13:03:42
-  comments_counter: 2
-  likes_counter: 1
-  author: one
-
+    title: 'My first post'
+    text: 'Description of my first post'
+    updated_at: 2023-05-03 13:03:42
+    created_at: 2023-05-03 13:03:42
+    comments_counter: 2
+    likes_counter: 1
+    author: one
 two:
-  title: 'My second post'
-  text: 'Description of my second post'
-  updated_at: 2023-05-03 13:03:42
-  created_at: 2023-05-03 13:03:42
-  comments_counter: 1
-  likes_counter: 3
-  author: one
+    title: 'My second post'
+    text: 'Description of my second post'
+    updated_at: 2023-05-03 13:03:42
+    created_at: 2023-05-03 13:03:42
+    comments_counter: 1
+    likes_counter: 3
+    author: one
+three:
+    title: 'My third post'
+    text: 'Description of my third post'
+    updated_at: 2023-05-03 13:03:42
+    created_at: 2023-05-03 13:03:42
+    comments_counter: 4
+    likes_counter: 2
+    author: one
+four:
+    title: 'My fourth post'
+    text: 'Description of my fourth post'
+    updated_at: 2023-05-03 13:03:42
+    created_at: 2023-05-03 13:03:42
+    comments_counter: 1
+    likes_counter: 0
+    author: one
