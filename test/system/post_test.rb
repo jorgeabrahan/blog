@@ -18,4 +18,8 @@ class PostsTest < ApplicationSystemTestCase
   test 'Ammount of comments is being displayed' do
     assert_text "Comments: #{@post.comments_counter}"
   end
+
+  test 'Amount of likes is being displayed is being displayed' do
+    assert_text "Likes: #{@post.likes_counter}"
+  end
 end
