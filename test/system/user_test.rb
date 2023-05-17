@@ -32,4 +32,11 @@ class UsersTest < ApplicationSystemTestCase
       assert_text post.text
     end
   end
+
+  test 'Button to display all user posts is being displayed' do
+    user = users(:one)
+    visit user_path(user)
+    assert_text 'See all posts'
+  end
+
 end
