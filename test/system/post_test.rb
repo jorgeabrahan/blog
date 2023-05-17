@@ -26,4 +26,13 @@ class PostsTest < ApplicationSystemTestCase
   test 'Post description is being displayed' do
     assert_text @post.text
   end
+
+  test 'The username of each commentor and the comment is being displayed' do
+    @post.comments.each_with_index do |comment, i|
+      within all('.comment')[i] do
+        assert_text comment.author.name
+        assert_text comment.text
+      end
+    end
+  end
 end
