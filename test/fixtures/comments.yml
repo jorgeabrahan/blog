@@ -1,22 +1,31 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  text: 'First comment'
-  updated_at: 2023-05-03 12:43:09
-  created_at: 2023-05-03 12:43:09
-  post: one
-  author: one
-
+    text: 'First comment'
+    updated_at: 2023-05-03 12:43:09
+    created_at: 2023-05-03 12:43:09
+    post: one
+    author: one
 two:
-  text: 'Second comment'
-  updated_at: 2023-05-03 12:43:09
-  created_at: 2023-05-03 12:43:09
-  post: one
-  author: one
-
+    text: 'Second comment'
+    updated_at: 2023-05-03 12:43:09
+    created_at: 2023-05-03 12:43:09
+    post: one
+    author: one
 three:
-  text: 'First comment'
-  updated_at: 2023-05-03 12:43:09
-  created_at: 2023-05-03 12:43:09
-  post: two
-  author: one
+    text: 'First comment'
+    updated_at: 2023-05-03 12:43:09
+    created_at: 2023-05-03 12:43:09
+    post: two
+    author: one
+four:
+    text: 'First comment'
+    updated_at: 2023-05-03 12:43:09
+    created_at: 2023-05-03 12:43:09
+    post: three
+    author: one
+five:
+    text: 'First comment'
+    updated_at: 2023-05-03 12:43:09
+    created_at: 2023-05-03 12:43:09
+    post: four
+    author: one

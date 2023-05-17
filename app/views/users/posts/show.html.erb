@@ -11,8 +11,12 @@
       </div>
       <p class="post__description"><%= @post.text %></p>
     </div>
+    <%= form_with url: user_post_likes_path(user_id: @user.id, post_id: @post.id), method: :post do %>
+      <%= submit_tag "Like" %>
+    <% end %>
     <div class="post__comments">
       <%= render partial: 'comment', collection: @post.all_comments %>
     </div>
+    <%= link_to 'New Comment', new_user_post_comment_path(@user, @post), class: "btn" %>
   </section>
 <% end %>
