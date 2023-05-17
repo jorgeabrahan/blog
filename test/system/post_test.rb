@@ -14,4 +14,8 @@ class PostsTest < ApplicationSystemTestCase
   test 'Post author is being displayed' do
     assert_text @user.name
   end
+
+  test 'Ammount of comments is being displayed' do
+    assert_text "Comments: #{@post.comments_counter}"
+  end
 end
