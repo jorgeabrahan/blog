@@ -11,4 +11,9 @@ class UsersTest < ApplicationSystemTestCase
     visit user_path(users(:one))
     assert_text 'Jorge'
   end
+
+  test 'Number of posts the user has written is being displayed' do
+    visit user_path(users(:one))
+    assert_text 'Amount of posts: 2'
+  end
 end
