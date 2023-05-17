@@ -6,4 +6,8 @@ class PostsTest < ApplicationSystemTestCase
     @post = @user.posts[0]
     visit user_post_path(@user, @post)
   end
+
+  test 'Post title is being displayed' do
+    assert_text @post.title
+  end
 end
