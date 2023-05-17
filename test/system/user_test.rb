@@ -16,4 +16,10 @@ class UsersTest < ApplicationSystemTestCase
     visit user_path(users(:one))
     assert_text 'Amount of posts: 2'
   end
+
+  test 'User bio is being displayed' do
+    user = users(:one)
+    visit user_path(user)
+    assert_text user.bio
+  end
 end
