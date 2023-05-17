@@ -22,4 +22,14 @@ class UsersTest < ApplicationSystemTestCase
     visit user_path(user)
     assert_text user.bio
   end
+
+  test 'User first three posts are being displayed' do
+    user = users(:one)
+    visit user_path(user)
+    user.posts.each_with_index do |post, i|
+      break if i == 3
+      assert_text post.title
+      assert_text post.text
+    end
+  end
 end
