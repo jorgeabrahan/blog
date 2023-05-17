@@ -22,4 +22,8 @@ class PostsTest < ApplicationSystemTestCase
   test 'Amount of likes is being displayed is being displayed' do
     assert_text "Likes: #{@post.likes_counter}"
   end
+
+  test 'Post description is being displayed' do
+    assert_text @post.text
+  end
 end
