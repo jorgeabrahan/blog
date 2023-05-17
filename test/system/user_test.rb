@@ -1,7 +1,6 @@
 require 'application_system_test_case'
 
 class UsersTest < ApplicationSystemTestCase
-
   test 'Profile picture is being displayed' do
     visit user_path(users(:one))
     assert_selector "img[src='https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541']"
@@ -28,6 +27,7 @@ class UsersTest < ApplicationSystemTestCase
     visit user_path(user)
     user.posts.each_with_index do |post, i|
       break if i == 3
+
       assert_text post.title
       assert_text post.text
     end
