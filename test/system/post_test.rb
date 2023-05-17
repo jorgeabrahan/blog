@@ -10,4 +10,8 @@ class PostsTest < ApplicationSystemTestCase
   test 'Post title is being displayed' do
     assert_text @post.title
   end
+
+  test 'Post author is being displayed' do
+    assert_text @user.name
+  end
 end
