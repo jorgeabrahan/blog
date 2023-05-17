@@ -46,4 +46,11 @@ class UsersTest < ApplicationSystemTestCase
     click_link post.title
     assert_current_path user_post_path(user, post)
   end
+
+  test 'When clicking on see all posts it redirects to user\'s post\'s index page' do
+    user = users(:one)
+    visit user_path(user)
+    click_link 'See all posts'
+    assert_current_path user_posts_path(user)
+  end
 end
