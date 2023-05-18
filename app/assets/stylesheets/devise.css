@@ -1,0 +1,15 @@
+.field input:not([type='checkbox']),
+.field textarea {
+	width: 100%;
+	resize: none;
+	border: 3px solid black;
+}
+
+.field {
+	margin-bottom: 1rem;
+}
+
+.actions .btn {
+	max-width: 100%;
+	width: 100%;
+}
