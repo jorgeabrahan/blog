@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Ability
   include CanCan::Ability
 
@@ -7,6 +5,7 @@ class Ability
     # Define abilities for the user here. For example:
     #
     return unless user.present?
+
     can :read, :all
 
     # allow the user to destroy a post if it is the owner
@@ -18,7 +17,8 @@ class Ability
       comment.author == user
     end
 
-    return unless user.role == "admin"
+    return unless user.role == 'admin'
+
     # if user has the role of admin
     can :manage, :all
 

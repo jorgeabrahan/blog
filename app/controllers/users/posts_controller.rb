@@ -4,7 +4,7 @@ class Users::PostsController < ApplicationController
     @post.destroy
     redirect_to root_path
   end
-  
+
   def index
     @user = User.find(params[:user_id])
     @posts = @user.posts.includes(:comments).order(created_at: :desc)
