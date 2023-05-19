@@ -1,4 +1,10 @@
 class Users::PostsController < ApplicationController
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to root_path
+  end
+
   def index
     @user = User.find(params[:user_id])
     @posts = @user.posts.includes(:comments).order(created_at: :desc)

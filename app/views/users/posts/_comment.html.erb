@@ -1,1 +1,6 @@
-<p class="comment"><strong><%= comment.author.name %>:</strong> <span><%= comment.text %></span></p>
+<div class="comment">
+  <p><strong><%= comment.author.name %>:</strong> <span><%= comment.text %></span></p>
+  <% if can? :destroy, comment %>
+    <%= link_to 'Delete', user_post_comment_path(comment.post.author, comment.post, comment), data: { turbo_method: :delete } %>
+  <% end %>
+</div>
