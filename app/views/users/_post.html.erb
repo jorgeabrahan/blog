@@ -1,0 +1,13 @@
+<div class="short-post">
+  <div class="user__post">
+    <h4 class="user__post-title"><%= link_to post.title, user_post_path(user_id: post.author_id, id: post.id) %> &#35;<%= post.id %></h4>
+    <p><%= post.text.length > 250 ? post.text[0..250] + "..." : post.text %></p>
+    <small class="user__post-comments">Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></small>
+  </div>
+  
+  <% if display_comments && post.comments.length > 0 %>
+    <div class="post__comments">
+      <%= render partial: 'users/posts/comment', collection: post.recent_comments %>
+    </div>
+  <% end %>
+</div>

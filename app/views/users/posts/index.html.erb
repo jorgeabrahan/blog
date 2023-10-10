@@ -1,2 +1,12 @@
-<h1>Users::Posts#index</h1>
-<p>Find me in app/views/users/posts/index.html.erb</p>
+<% if @user.nil? %>
+  <p>There's no user with the ID of: <%= params[:user_id] %>.</p>
+<% else %>
+  <section class="layout-container layout-container-posts">
+    <%= render partial: 'users/user', locals: { user: @user, name_as_link: true } %>
+    <div class="posts">
+      <%= render partial: 'users/post', collection: @posts, locals: { display_comments: true } %>
+    </div>
+    <%= link_to 'New Post', new_user_post_path(@user), class: "btn" %>
+    <a href="#" class="btn">Pagination</a>
+  </section>
+<% end %>

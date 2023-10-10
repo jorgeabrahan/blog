@@ -1,0 +1,6 @@
+<section class="layout-container">
+  <h1 class="users-title">List of users</h1>
+  <section class="users">
+    <%= render partial: 'user', collection: @users, as: :user, locals: { name_as_link: true } %>
+  </section>
+</section>

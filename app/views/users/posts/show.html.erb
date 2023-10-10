@@ -1,2 +1,25 @@
-<h1>Users::Posts#show</h1>
-<p>Find me in app/views/users/posts/show.html.erb</p>
+<% if @post.nil? %>
+  <p>
+    There is no post with the ID: <%= params[:id] %> or it might not belong to the user with the ID: <%= params[:user_id] %>.
+  </p>
+<% else %>
+  <section class="layout-container">
+    <div class="post">
+      <div class="post__header">
+        <h3><%= @post.title %> &#35;<%= @post.id %> by <%= link_to @user.name, user_path(@user) %></h3>
+        <small>Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></small>  
+      </div>
+      <p class="post__description"><%= @post.text %></p>
+    </div>
+    <%= form_with url: user_post_likes_path(user_id: @user.id, post_id: @post.id), method: :post do %>
+      <%= submit_tag "Like" %>
+    <% end %>
+    <% if can? :destroy, @post %>
+      <%= link_to 'Delete Post', user_post_path(user_id: @user.id, post_id: @post.id), data: { turbo_method: :delete } %>
+    <% end %>
+    <div class="post__comments">
+      <%= render partial: 'comment', collection: @post.all_comments %>
+    </div>
+    <%= link_to 'New Comment', new_user_post_comment_path(@user, @post), class: "btn" %>
+  </section>
+<% end %>

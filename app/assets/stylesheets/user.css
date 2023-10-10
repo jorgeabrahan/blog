@@ -1,0 +1,28 @@
+.layout-container-user {
+  margin-top: 1rem;
+}
+
+.user__posts {
+  margin-bottom: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.user__bio,
+.user__post {
+  border: 3px solid black;
+  padding: 0.5rem;
+}
+
+.user__bio {
+  margin-block: 1rem;
+}
+
+.user__post-title {
+  margin-bottom: 0.4rem;
+}
+
+.user__post-comments {
+  display: block;
+  text-align: right;
+}
